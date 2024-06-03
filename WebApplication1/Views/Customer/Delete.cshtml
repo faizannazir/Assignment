@@ -1,0 +1,19 @@
+﻿@model Customer
+
+
+
+<div class="text-center">
+    <h3> Are You Sure.You want to delete "@Model.Name" Data?</h3>
+</div>
+<div class="text-center my-5">
+    <form asp-action="Delete" method="post">
+        <div class="row">
+            <div class="col-1 offset-3">
+                <a asp-action="Index" class="btn btn-primary btn-lg btn-block mr-10 mb-10">Cancel</a>
+            </div>
+            <div class="col-3 offset-3">
+                <input type="submit" value="Delete" class="btn btn-danger btn-lg btn-block mb-10" />
+            </div>
+        </div>
+    </form>
+</div>
